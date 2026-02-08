@@ -1,0 +1,211 @@
+implementation,scenario,metric,value,unit,status
+modern-ahocorasick,few-patterns-small-text,compile_time_median_ms,0.1437,ms,ok
+modern-ahocorasick,few-patterns-small-text,search_ops_per_sec,1660.32,ops/sec,ok
+modern-ahocorasick,few-patterns-small-text,search_time_median_ms,0.6023,ms,ok
+modern-ahocorasick,few-patterns-small-text,search_time_p95_ms,0.6380,ms,ok
+modern-ahocorasick,few-patterns-small-text,search_time_p99_ms,0.6488,ms,ok
+modern-ahocorasick,few-patterns-small-text,total_matches,525,count,ok
+modern-ahocorasick,few-patterns-small-text,memory_delta_bytes,15792,bytes,ok
+ahocorasick (BrunoRB),few-patterns-small-text,compile_time_median_ms,0.0358,ms,ok
+ahocorasick (BrunoRB),few-patterns-small-text,search_ops_per_sec,4521.04,ops/sec,ok
+ahocorasick (BrunoRB),few-patterns-small-text,search_time_median_ms,0.2212,ms,ok
+ahocorasick (BrunoRB),few-patterns-small-text,search_time_p95_ms,0.2315,ms,ok
+ahocorasick (BrunoRB),few-patterns-small-text,search_time_p99_ms,0.2323,ms,ok
+ahocorasick (BrunoRB),few-patterns-small-text,total_matches,525,count,ok
+ahocorasick (BrunoRB),few-patterns-small-text,memory_delta_bytes,15848,bytes,ok
+@tanishiking/aho-corasick,few-patterns-small-text,compile_time_median_ms,0.0272,ms,ok
+@tanishiking/aho-corasick,few-patterns-small-text,search_ops_per_sec,2694.51,ops/sec,ok
+@tanishiking/aho-corasick,few-patterns-small-text,search_time_median_ms,0.3711,ms,ok
+@tanishiking/aho-corasick,few-patterns-small-text,search_time_p95_ms,0.4221,ms,ok
+@tanishiking/aho-corasick,few-patterns-small-text,search_time_p99_ms,0.4253,ms,ok
+@tanishiking/aho-corasick,few-patterns-small-text,total_matches,525,count,ok
+@tanishiking/aho-corasick,few-patterns-small-text,memory_delta_bytes,22752,bytes,ok
+aho-corasick2,few-patterns-small-text,compile_time_median_ms,0.0535,ms,ok
+aho-corasick2,few-patterns-small-text,search_ops_per_sec,3149.19,ops/sec,ok
+aho-corasick2,few-patterns-small-text,search_time_median_ms,0.3175,ms,ok
+aho-corasick2,few-patterns-small-text,search_time_p95_ms,0.3374,ms,ok
+aho-corasick2,few-patterns-small-text,search_time_p99_ms,0.3389,ms,ok
+aho-corasick2,few-patterns-small-text,total_matches,525,count,ok
+aho-corasick2,few-patterns-small-text,memory_delta_bytes,22920,bytes,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,compile_time_median_ms,0.0297,ms,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,search_ops_per_sec,8095.79,ops/sec,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,search_time_median_ms,0.1235,ms,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,search_time_p95_ms,0.1743,ms,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,search_time_p99_ms,0.1787,ms,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,total_matches,525,count,ok
+@blackglory/aho-corasick (native),few-patterns-small-text,memory_delta_bytes,464,bytes,ok
+@monyone/aho-corasick,few-patterns-small-text,compile_time_median_ms,0.0433,ms,ok
+@monyone/aho-corasick,few-patterns-small-text,search_ops_per_sec,5138.63,ops/sec,ok
+@monyone/aho-corasick,few-patterns-small-text,search_time_median_ms,0.1946,ms,ok
+@monyone/aho-corasick,few-patterns-small-text,search_time_p95_ms,0.2087,ms,ok
+@monyone/aho-corasick,few-patterns-small-text,search_time_p99_ms,0.2146,ms,ok
+@monyone/aho-corasick,few-patterns-small-text,total_matches,525,count,ok
+@monyone/aho-corasick,few-patterns-small-text,memory_delta_bytes,30536,bytes,ok
+modern-ahocorasick,few-patterns-large-text,compile_time_median_ms,0.1503,ms,ok
+modern-ahocorasick,few-patterns-large-text,search_ops_per_sec,16.53,ops/sec,ok
+modern-ahocorasick,few-patterns-large-text,search_time_median_ms,60.5037,ms,ok
+modern-ahocorasick,few-patterns-large-text,search_time_p95_ms,61.6660,ms,ok
+modern-ahocorasick,few-patterns-large-text,search_time_p99_ms,61.8491,ms,ok
+modern-ahocorasick,few-patterns-large-text,total_matches,32656,count,ok
+modern-ahocorasick,few-patterns-large-text,memory_delta_bytes,15864,bytes,ok
+ahocorasick (BrunoRB),few-patterns-large-text,compile_time_median_ms,0.0350,ms,ok
+ahocorasick (BrunoRB),few-patterns-large-text,search_ops_per_sec,46.55,ops/sec,ok
+ahocorasick (BrunoRB),few-patterns-large-text,search_time_median_ms,21.4825,ms,ok
+ahocorasick (BrunoRB),few-patterns-large-text,search_time_p95_ms,22.0959,ms,ok
+ahocorasick (BrunoRB),few-patterns-large-text,search_time_p99_ms,22.2081,ms,ok
+ahocorasick (BrunoRB),few-patterns-large-text,total_matches,32656,count,ok
+ahocorasick (BrunoRB),few-patterns-large-text,memory_delta_bytes,15864,bytes,ok
+@tanishiking/aho-corasick,few-patterns-large-text,compile_time_median_ms,0.0197,ms,ok
+@tanishiking/aho-corasick,few-patterns-large-text,search_ops_per_sec,23.42,ops/sec,ok
+@tanishiking/aho-corasick,few-patterns-large-text,search_time_median_ms,42.7048,ms,ok
+@tanishiking/aho-corasick,few-patterns-large-text,search_time_p95_ms,43.6679,ms,ok
+@tanishiking/aho-corasick,few-patterns-large-text,search_time_p99_ms,43.7441,ms,ok
+@tanishiking/aho-corasick,few-patterns-large-text,total_matches,32656,count,ok
+@tanishiking/aho-corasick,few-patterns-large-text,memory_delta_bytes,22752,bytes,ok
+aho-corasick2,few-patterns-large-text,compile_time_median_ms,0.0489,ms,ok
+aho-corasick2,few-patterns-large-text,search_ops_per_sec,32.94,ops/sec,ok
+aho-corasick2,few-patterns-large-text,search_time_median_ms,30.3581,ms,ok
+aho-corasick2,few-patterns-large-text,search_time_p95_ms,31.1653,ms,ok
+aho-corasick2,few-patterns-large-text,search_time_p99_ms,31.2419,ms,ok
+aho-corasick2,few-patterns-large-text,total_matches,32656,count,ok
+aho-corasick2,few-patterns-large-text,memory_delta_bytes,22936,bytes,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,compile_time_median_ms,0.0226,ms,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,search_ops_per_sec,81.72,ops/sec,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,search_time_median_ms,12.2364,ms,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,search_time_p95_ms,12.6474,ms,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,search_time_p99_ms,12.6730,ms,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,total_matches,32656,count,ok
+@blackglory/aho-corasick (native),few-patterns-large-text,memory_delta_bytes,232,bytes,ok
+@monyone/aho-corasick,few-patterns-large-text,compile_time_median_ms,0.0409,ms,ok
+@monyone/aho-corasick,few-patterns-large-text,search_ops_per_sec,41.63,ops/sec,ok
+@monyone/aho-corasick,few-patterns-large-text,search_time_median_ms,24.0220,ms,ok
+@monyone/aho-corasick,few-patterns-large-text,search_time_p95_ms,24.1992,ms,ok
+@monyone/aho-corasick,few-patterns-large-text,search_time_p99_ms,24.2629,ms,ok
+@monyone/aho-corasick,few-patterns-large-text,total_matches,32656,count,ok
+@monyone/aho-corasick,few-patterns-large-text,memory_delta_bytes,30552,bytes,ok
+modern-ahocorasick,medium-balanced,compile_time_median_ms,2.3801,ms,ok
+modern-ahocorasick,medium-balanced,search_ops_per_sec,133.99,ops/sec,ok
+modern-ahocorasick,medium-balanced,search_time_median_ms,7.4631,ms,ok
+modern-ahocorasick,medium-balanced,search_time_p95_ms,7.5740,ms,ok
+modern-ahocorasick,medium-balanced,search_time_p99_ms,7.5934,ms,ok
+modern-ahocorasick,medium-balanced,total_matches,33547,count,ok
+modern-ahocorasick,medium-balanced,memory_delta_bytes,252848,bytes,ok
+ahocorasick (BrunoRB),medium-balanced,compile_time_median_ms,0.3654,ms,ok
+ahocorasick (BrunoRB),medium-balanced,search_ops_per_sec,343.89,ops/sec,ok
+ahocorasick (BrunoRB),medium-balanced,search_time_median_ms,2.9079,ms,ok
+ahocorasick (BrunoRB),medium-balanced,search_time_p95_ms,3.0002,ms,ok
+ahocorasick (BrunoRB),medium-balanced,search_time_p99_ms,3.0314,ms,ok
+ahocorasick (BrunoRB),medium-balanced,total_matches,33547,count,ok
+ahocorasick (BrunoRB),medium-balanced,memory_delta_bytes,197632,bytes,ok
+@tanishiking/aho-corasick,medium-balanced,compile_time_median_ms,0.2174,ms,ok
+@tanishiking/aho-corasick,medium-balanced,search_ops_per_sec,196.44,ops/sec,ok
+@tanishiking/aho-corasick,medium-balanced,search_time_median_ms,5.0907,ms,ok
+@tanishiking/aho-corasick,medium-balanced,search_time_p95_ms,5.3731,ms,ok
+@tanishiking/aho-corasick,medium-balanced,search_time_p99_ms,5.4211,ms,ok
+@tanishiking/aho-corasick,medium-balanced,total_matches,33547,count,ok
+@tanishiking/aho-corasick,medium-balanced,memory_delta_bytes,407304,bytes,ok
+aho-corasick2,medium-balanced,compile_time_median_ms,0.6889,ms,ok
+aho-corasick2,medium-balanced,search_ops_per_sec,211.31,ops/sec,ok
+aho-corasick2,medium-balanced,search_time_median_ms,4.7324,ms,ok
+aho-corasick2,medium-balanced,search_time_p95_ms,4.8312,ms,ok
+aho-corasick2,medium-balanced,search_time_p99_ms,4.8711,ms,ok
+aho-corasick2,medium-balanced,total_matches,32135,count,ok
+aho-corasick2,medium-balanced,memory_delta_bytes,376512,bytes,ok
+@blackglory/aho-corasick (native),medium-balanced,compile_time_median_ms,0.1968,ms,ok
+@blackglory/aho-corasick (native),medium-balanced,search_ops_per_sec,642.17,ops/sec,ok
+@blackglory/aho-corasick (native),medium-balanced,search_time_median_ms,1.5572,ms,ok
+@blackglory/aho-corasick (native),medium-balanced,search_time_p95_ms,1.6731,ms,ok
+@blackglory/aho-corasick (native),medium-balanced,search_time_p99_ms,1.6875,ms,ok
+@blackglory/aho-corasick (native),medium-balanced,total_matches,32135,count,ok
+@blackglory/aho-corasick (native),medium-balanced,memory_delta_bytes,232,bytes,ok
+@monyone/aho-corasick,medium-balanced,compile_time_median_ms,0.6280,ms,ok
+@monyone/aho-corasick,medium-balanced,search_ops_per_sec,356.30,ops/sec,ok
+@monyone/aho-corasick,medium-balanced,search_time_median_ms,2.8066,ms,ok
+@monyone/aho-corasick,medium-balanced,search_time_p95_ms,2.9608,ms,ok
+@monyone/aho-corasick,medium-balanced,search_time_p99_ms,3.0077,ms,ok
+@monyone/aho-corasick,medium-balanced,total_matches,32135,count,ok
+@monyone/aho-corasick,medium-balanced,memory_delta_bytes,527384,bytes,ok
+modern-ahocorasick,many-patterns-small-text,compile_time_median_ms,30.7952,ms,ok
+modern-ahocorasick,many-patterns-small-text,search_ops_per_sec,1321.73,ops/sec,ok
+modern-ahocorasick,many-patterns-small-text,search_time_median_ms,0.7566,ms,ok
+modern-ahocorasick,many-patterns-small-text,search_time_p95_ms,0.7646,ms,ok
+modern-ahocorasick,many-patterns-small-text,search_time_p99_ms,0.7664,ms,ok
+modern-ahocorasick,many-patterns-small-text,total_matches,2613,count,ok
+modern-ahocorasick,many-patterns-small-text,memory_delta_bytes,3030856,bytes,ok
+ahocorasick (BrunoRB),many-patterns-small-text,compile_time_median_ms,5.2418,ms,ok
+ahocorasick (BrunoRB),many-patterns-small-text,search_ops_per_sec,3399.92,ops/sec,ok
+ahocorasick (BrunoRB),many-patterns-small-text,search_time_median_ms,0.2941,ms,ok
+ahocorasick (BrunoRB),many-patterns-small-text,search_time_p95_ms,0.2989,ms,ok
+ahocorasick (BrunoRB),many-patterns-small-text,search_time_p99_ms,0.3004,ms,ok
+ahocorasick (BrunoRB),many-patterns-small-text,total_matches,2613,count,ok
+ahocorasick (BrunoRB),many-patterns-small-text,memory_delta_bytes,2249072,bytes,ok
+@tanishiking/aho-corasick,many-patterns-small-text,compile_time_median_ms,1.9620,ms,ok
+@tanishiking/aho-corasick,many-patterns-small-text,search_ops_per_sec,2057.61,ops/sec,ok
+@tanishiking/aho-corasick,many-patterns-small-text,search_time_median_ms,0.4860,ms,ok
+@tanishiking/aho-corasick,many-patterns-small-text,search_time_p95_ms,0.4954,ms,ok
+@tanishiking/aho-corasick,many-patterns-small-text,search_time_p99_ms,0.5005,ms,ok
+@tanishiking/aho-corasick,many-patterns-small-text,total_matches,2613,count,ok
+@tanishiking/aho-corasick,many-patterns-small-text,memory_delta_bytes,5266888,bytes,ok
+aho-corasick2,many-patterns-small-text,compile_time_median_ms,3.9803,ms,ok
+aho-corasick2,many-patterns-small-text,search_ops_per_sec,2033.90,ops/sec,ok
+aho-corasick2,many-patterns-small-text,search_time_median_ms,0.4917,ms,ok
+aho-corasick2,many-patterns-small-text,search_time_p95_ms,0.5101,ms,ok
+aho-corasick2,many-patterns-small-text,search_time_p99_ms,0.5110,ms,ok
+aho-corasick2,many-patterns-small-text,total_matches,2613,count,ok
+aho-corasick2,many-patterns-small-text,memory_delta_bytes,4266080,bytes,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,compile_time_median_ms,1.9972,ms,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,search_ops_per_sec,2723.56,ops/sec,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,search_time_median_ms,0.3672,ms,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,search_time_p95_ms,0.4161,ms,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,search_time_p99_ms,0.4297,ms,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,total_matches,2613,count,ok
+@blackglory/aho-corasick (native),many-patterns-small-text,memory_delta_bytes,232,bytes,ok
+@monyone/aho-corasick,many-patterns-small-text,compile_time_median_ms,5.4594,ms,ok
+@monyone/aho-corasick,many-patterns-small-text,search_ops_per_sec,3245.44,ops/sec,ok
+@monyone/aho-corasick,many-patterns-small-text,search_time_median_ms,0.3081,ms,ok
+@monyone/aho-corasick,many-patterns-small-text,search_time_p95_ms,0.3251,ms,ok
+@monyone/aho-corasick,many-patterns-small-text,search_time_p99_ms,0.3272,ms,ok
+@monyone/aho-corasick,many-patterns-small-text,total_matches,2613,count,ok
+@monyone/aho-corasick,many-patterns-small-text,memory_delta_bytes,6655736,bytes,ok
+modern-ahocorasick,many-patterns-large-text,compile_time_median_ms,30.4572,ms,ok
+modern-ahocorasick,many-patterns-large-text,search_ops_per_sec,11.56,ops/sec,ok
+modern-ahocorasick,many-patterns-large-text,search_time_median_ms,86.5157,ms,ok
+modern-ahocorasick,many-patterns-large-text,search_time_p95_ms,90.9097,ms,ok
+modern-ahocorasick,many-patterns-large-text,search_time_p99_ms,91.0803,ms,ok
+modern-ahocorasick,many-patterns-large-text,total_matches,227218,count,ok
+modern-ahocorasick,many-patterns-large-text,memory_delta_bytes,3031496,bytes,ok
+ahocorasick (BrunoRB),many-patterns-large-text,compile_time_median_ms,5.3162,ms,ok
+ahocorasick (BrunoRB),many-patterns-large-text,search_ops_per_sec,29.09,ops/sec,ok
+ahocorasick (BrunoRB),many-patterns-large-text,search_time_median_ms,34.3728,ms,ok
+ahocorasick (BrunoRB),many-patterns-large-text,search_time_p95_ms,34.8084,ms,ok
+ahocorasick (BrunoRB),many-patterns-large-text,search_time_p99_ms,34.8780,ms,ok
+ahocorasick (BrunoRB),many-patterns-large-text,total_matches,227218,count,ok
+ahocorasick (BrunoRB),many-patterns-large-text,memory_delta_bytes,2248432,bytes,ok
+@tanishiking/aho-corasick,many-patterns-large-text,compile_time_median_ms,1.9675,ms,ok
+@tanishiking/aho-corasick,many-patterns-large-text,search_ops_per_sec,14.86,ops/sec,ok
+@tanishiking/aho-corasick,many-patterns-large-text,search_time_median_ms,67.3160,ms,ok
+@tanishiking/aho-corasick,many-patterns-large-text,search_time_p95_ms,71.6050,ms,ok
+@tanishiking/aho-corasick,many-patterns-large-text,search_time_p99_ms,71.8135,ms,ok
+@tanishiking/aho-corasick,many-patterns-large-text,total_matches,227218,count,ok
+@tanishiking/aho-corasick,many-patterns-large-text,memory_delta_bytes,5268128,bytes,ok
+aho-corasick2,many-patterns-large-text,compile_time_median_ms,6.7368,ms,ok
+aho-corasick2,many-patterns-large-text,search_ops_per_sec,17.07,ops/sec,ok
+aho-corasick2,many-patterns-large-text,search_time_median_ms,58.5785,ms,ok
+aho-corasick2,many-patterns-large-text,search_time_p95_ms,60.3308,ms,ok
+aho-corasick2,many-patterns-large-text,search_time_p99_ms,60.6069,ms,ok
+aho-corasick2,many-patterns-large-text,total_matches,227218,count,ok
+aho-corasick2,many-patterns-large-text,memory_delta_bytes,4263344,bytes,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,compile_time_median_ms,2.1260,ms,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,search_ops_per_sec,49.81,ops/sec,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,search_time_median_ms,20.0748,ms,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,search_time_p95_ms,21.0249,ms,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,search_time_p99_ms,21.1328,ms,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,total_matches,227218,count,ok
+@blackglory/aho-corasick (native),many-patterns-large-text,memory_delta_bytes,232,bytes,ok
+@monyone/aho-corasick,many-patterns-large-text,compile_time_median_ms,6.5559,ms,ok
+@monyone/aho-corasick,many-patterns-large-text,search_ops_per_sec,24.96,ops/sec,ok
+@monyone/aho-corasick,many-patterns-large-text,search_time_median_ms,40.0665,ms,ok
+@monyone/aho-corasick,many-patterns-large-text,search_time_p95_ms,41.2594,ms,ok
+@monyone/aho-corasick,many-patterns-large-text,search_time_p99_ms,41.4538,ms,ok
+@monyone/aho-corasick,many-patterns-large-text,total_matches,227218,count,ok
+@monyone/aho-corasick,many-patterns-large-text,memory_delta_bytes,6652144,bytes,ok

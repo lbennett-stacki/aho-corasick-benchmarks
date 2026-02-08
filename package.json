@@ -1,0 +1,20 @@
+{
+	"name": "@lbennett/aho-corasick-benchmarks",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"bench:pre": "pnpm run --filter @lbennett/aho-corasick-benchmarks-bench setup-corpus",
+		"bench": "pnpm run --filter @lbennett/aho-corasick-benchmarks-bench bench",
+		"bench:post": "pnpm build:web && cp web/dist/index.html bench/results/dashboard-latest.html",
+		"build:web": "pnpm run --filter @lbennett/aho-corasick-benchmarks-web build",
+		"format": "biome format --write"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.22.0",
+	"devDependencies": {
+		"@biomejs/biome": "2.3.14"
+	}
+}

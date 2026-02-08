@@ -1,0 +1,26 @@
+{
+	"name": "@lbennett/aho-corasick-benchmarks-bench",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"setup-corpus": "tsx scripts/setup-corpus.ts",
+		"bench": "node --expose-gc --import tsx/esm scripts/run.ts",
+		"bench:quick": "node --expose-gc --import tsx/esm scripts/run.ts --quick"
+	},
+	"dependencies": {
+		"modern-ahocorasick": "^2.0.4",
+		"ahocorasick": "^1.0.2",
+		"@tanishiking/aho-corasick": "^0.0.1",
+		"aho-corasick2": "*"
+	},
+	"optionalDependencies": {
+		"@blackglory/aho-corasick": "*",
+		"@monyone/aho-corasick": "*"
+	},
+	"devDependencies": {
+		"typescript": "^5.7.0",
+		"tsx": "^4.19.0",
+		"@types/node": "^22.0.0"
+	}
+}

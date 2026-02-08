@@ -1,0 +1,106 @@
+name: Benchmark
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install system build tools
+        run: sudo apt-get update && sudo apt-get install -y build-essential
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build @blackglory/aho-corasick native addon
+        run: |
+          BLACKGLORY_DIR=$(pnpm --filter @lbennett/aho-corasick-benchmarks-bench exec node -e "
+            const { createRequire } = require('module');
+            const req = createRequire(require('path').resolve('package.json'));
+            console.log(require('path').dirname(req.resolve('@blackglory/aho-corasick/package.json')));
+          ")
+          echo "Package dir: $BLACKGLORY_DIR"
+          cd "$BLACKGLORY_DIR"
+          npx neon build --release
+          echo "Native addon built successfully"
+
+      - name: Verify native addons
+        run: |
+          cd bench
+          node -e "
+            const { createRequire } = require('module');
+            const req = createRequire(require('path').resolve('package.json'));
+            const m = req('@blackglory/aho-corasick');
+            console.log('blackglory loaded:', Object.keys(m));
+          "
+
+      - name: Setup corpus
+        run: pnpm bench:pre
+
+      - name: Run benchmarks
+        run: pnpm bench
+
+      - name: Build dashboard
+        run: pnpm bench:post
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: |
+            bench/results/*-latest.*
+          retention-days: 90
+
+      - name: Prepare Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          mkdir -p _site
+          cp bench/results/dashboard-latest.html _site/index.html
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: benchmark
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
